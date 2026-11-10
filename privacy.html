@@ -1,0 +1,47 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Privacy policy for AutoTech Lab's owner-operated YouTube upload automation.">
+  <meta name="theme-color" content="#09111b">
+  <title>Privacy Policy — AutoTech Lab</title>
+  <link rel="icon" type="image/svg+xml" href="favicon.svg">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header class="topbar"><nav class="nav container" aria-label="Main navigation"><a class="brand" href="./"><span class="brandmark" aria-hidden="true">A</span> AutoTech Lab</a><div class="navlinks"><a href="./">Home</a><a href="./#how-it-works">YouTube integration</a><a href="privacy.html" aria-current="page">Privacy</a></div></nav></header>
+  <main class="container doc">
+    <div class="eyebrow">Privacy &amp; Google API data</div>
+    <h1>Privacy policy</h1>
+    <p class="lead">This policy explains how AutoTech Lab's owner-operated video publishing automation uses Google authorization and YouTube services.</p>
+    <p class="updated">Last updated: November 10, 2026</p>
+    <p class="inline-note">AutoTech Lab is an independent educational project. This website is informational only; visitors do not need a Google account or YouTube sign-in to browse it.</p>
+    <h2>1. What the application does</h2>
+    <p>AutoTech Lab creates educational video files and uses the YouTube Data API to upload those files to a YouTube channel authorized by the project owner. The workflow submits videos with <strong>Private</strong> visibility. It is not a general-purpose public uploader or a service for unrelated users.</p>
+    <h2>2. Google information and permissions accessed</h2>
+    <p>The workflow requests the Google OAuth scope <code>https://www.googleapis.com/auth/youtube.upload</code>. This authorization lets the workflow upload videos to the channel associated with the consenting Google/YouTube account. The project uses the granted authorization to upload the produced video file, its title, and its description, and to obtain an upload result (including a video identifier).</p>
+    <p>The website itself does not request Google login, ask for passwords, read private emails, access Google Drive, or collect visitors' YouTube account information. If the workflow's permissions change in the future, this policy must be updated before that change is used.</p>
+    <h2>3. How authorization and data are used</h2>
+    <ul>
+      <li>Google OAuth credentials are used solely to authorize YouTube uploads for the project owner.</li>
+      <li>Generated narration, video files, episode titles, and descriptions are processed in the project's automated production workflow.</li>
+      <li>The video ID and upload status may be recorded in the project's private repository to prevent duplicate uploads and support troubleshooting.</li>
+      <li>OAuth authorization is not used for advertising, profiling, or selling user data.</li>
+    </ul>
+    <h2>4. Storage, security, and sharing</h2>
+    <p>OAuth client credentials and refresh tokens are configured as access-controlled GitHub Actions secrets for the private production repository. They are not intentionally embedded in the public website or committed into publicly accessible source files. Production files and diagnostic information may be processed on GitHub Actions runners; authorized video metadata and video content are transmitted to YouTube for upload.</p>
+    <p>Google and GitHub process information in connection with their services under their own terms and privacy policies. The project does not sell Google user data or provide OAuth credentials to advertisers or unrelated third parties. Access to private automation data should be limited to authorized maintainers.</p>
+    <h2>5. Retention and deletion</h2>
+    <p>OAuth secrets are retained in the project's GitHub configuration until replaced or deleted by an authorized maintainer. Upload status and video identifiers may be retained in private repository history to protect against duplicate uploads. Temporary production files and workflow logs follow the applicable GitHub Actions artifact and retention configuration. Uploaded videos remain in the channel until removed by the channel owner under YouTube's controls.</p>
+    <p>The account owner can revoke the app's Google account authorization from <a href="https://myaccount.google.com/permissions">Google Account → Third-party access</a> and can delete or replace stored GitHub Actions secrets. Revoking authorization prevents future authorized uploads; it does not automatically remove videos already uploaded.</p>
+    <h2>6. Website visitors</h2>
+    <p>This static website does not include application sign-in forms, tracking scripts, or advertising pixels in its source. As the site is hosted by a third-party provider, that hosting provider may process ordinary technical information needed to serve pages, such as IP addresses and request logs, under its own privacy practices.</p>
+    <h2>7. Limited use and changes</h2>
+    <p>Google API data obtained through authorization is used only to provide or improve the described YouTube upload functionality, with appropriate access controls. It is not used for unrelated purposes. This policy may be revised if the integration or data practices change; the updated date above will be changed accordingly.</p>
+    <h2>8. Contact</h2>
+    <p>For questions about the project's data practices, contact the project maintainer through <a href="https://github.com/talhafarid418">the maintainer's GitHub profile</a>. The Google OAuth consent screen also provides the project's designated support contact.</p>
+  </main>
+  <footer class="footer"><div class="container footer-inner"><span>© 2026 AutoTech Lab. Independent educational project.</span><div class="footerlinks"><a href="./">Home</a><a href="privacy.html">Privacy policy</a></div></div></footer>
+</body>
+</html>
